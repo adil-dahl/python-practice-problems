@@ -5,10 +5,12 @@ def make_star_strings(lst):
       lst (list of nonnegative integers): the list
     Returns: A list of strings of stars (*)
     """
-
-    ### Replace pass with your code
-    pass
-
+    in_progress = []
+    add = "*"
+    for i in lst:
+        attached = add * i
+        in_progress.append(attached)
+    return in_progress
 
 #############################################################
 ###                                                       ###

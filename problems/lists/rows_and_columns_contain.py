@@ -7,9 +7,14 @@ def rows_and_columns_contain(lst, target):
     Returns: True if every row and every column of lst contains
       target, False otherwise
     """
+    total_1 = 0
+    total_2 = 0
 
-    ### Replace pass with your code
-    pass
+    for mini in lst:
+        for value in mini:
+            if value == target:
+                total = total + 1
+                break
 
 
 #############################################################

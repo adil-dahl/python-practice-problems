@@ -2,14 +2,10 @@ def negate_list(lst):
     """
     Produce a *new* list with its values negated
     """
-
-    ### EXERCISE 6 -- YOUR CODE GOES HERE
-    # Replace the following line with your code.
-    # After running your code, variable n should contain the value
-    # we ask you to compute in this exercise
-    new_lst = None
-
-    ### DO NOT MODIFY THE FOLLOWING LINE!
+    new_lst = []
+    for i in lst:
+        i = i * -1
+        new_lst.append(i)
     return new_lst
 
 

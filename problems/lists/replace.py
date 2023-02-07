@@ -7,10 +7,25 @@ def replace(lst, replacee, replacer):
       replacer: the element to replace replacee with
     Returns: None, modifies lst in-place
     """
+    for i, value in enumerate(lst):
+        if value == replacee:
+            lst[i] = [replacer]
+    return lst
 
-    ### Replace pass with your code
-    pass
 
+def test(lst):
+    """
+    Docstring goes here
+    """
+    r = 0
+    c = 0
+    z = 1
+    while z != 0:
+        for i in lst:
+            if c >= 3:
+                return c
+            if c < 3:
+                c = c + 1
 
 #############################################################
 ###                                                       ###
